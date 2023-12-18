@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "PTSansCaption";
+}
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../font/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: Righteous;
+    src: url(../font/Righteous-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTSansCaption;
+    src: url(../font/PTSansCaption-Regular.ttf);
+}
+
+@font-face {
+    font-family: PTSansCaption;
+    src: url(../font/PTSansCaption-Regular.ttf);
+    font-weight: bold;
+}
+
+body {
+    background-color: #f7ecde;
+}
+
+section h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    position: relative;
+}
+
+section h1::after {
+    content:"";
+    position: absolute;
+    width: 21%;
+    height: 25%;
+    background-color: #fec260;
+    bottom:0;
+    left:50%;
+    translate: -49%;
+    z-index: -1;
+    transition: all 0.4s;
+}
+section h1:hover::after{
+    height: 70%;
+    background-color: aquamarine;
+}
+
+.input-content{
+border-top: 2px dotted black;
+border-bottom: 2px dotted black;
+
+}
+.input-content button{
+    width: 10%;
+    margin: auto;
+}
+.input-content h2
+{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background: linear-gradient(to right, #3ca55c 50%, #b5ac49 60%);
+    background-clip: text;
+    color: transparent;
+}
+label
+{
+    font-family: "PTSansCaption";
+}
+.btn-visit
+{
+    background-color: #9eb23b;
+    color: white;
+}
+.btn-delete
+{
+    background-color: #eb1d36;
+    color: white;
+}

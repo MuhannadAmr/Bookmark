@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <title>Bookmark</title>
+</head>
+
+<body>
+    <section>
+        <div class="container ">
+            <div class="main-name w-100">
+                <h1 class=" d-inline-block my-5 d-flex justify-content-center">Bookmarker</h1>
+            </div>
+            <div class="input-content py-3 d-flex flex-column justify-content-center">
+                <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i
+                        class="fa-solid fa-bookmark"></i></h2>
+                <div>
+                    <label for="inputName" class="fw-semibold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                    <input type="text" placeholder="Bookmark Name" id="inputName" class="form-control mb-3 mt-2">
+                </div>
+
+                <div>
+                    <label for="inputUrl" class="fw-semibold"><i class="fa-solid fa-link"></i> Site Url</label>
+                    <input type="text" placeholder="Weebsite Url" id="inputUrl" class="form-control mb-3 mt-2">
+                </div>
+
+                    <button class="btn btn-danger">submit</button>
+                
+            </div>
+            <table class="table my-3 text-center">
+                <thead>
+                    <th class="fw-semibold">Index</th>
+                    <th class="fw-semibold">Website Name</th>
+                    <th class="fw-semibold">Visit</th>
+                    <th class="fw-semibold">Delete</th>
+                </thead>
+                <thead id="tableData">
+                    
+                </thead>
+            </table>
+        </div>
+    </section>
+    
+    <!-- js -->
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
